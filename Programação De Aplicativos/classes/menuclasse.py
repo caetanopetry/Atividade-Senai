@@ -3,14 +3,7 @@ autor = input("Digite o nome do autor: ")
 titulo = (input("Qual o nome do livro?: "))
 ano = int ("Ano do livro?: ")
 disponivel = int (input("O livro está disponível? (1 para sim / 2 para não): "))
-if disponivel == 1:
-    disponivel = True
-elif disponivel == 2:
-    disponivel = False
-else:
-    print("Digite um número válido!")
 
-p = livro(autor, titulo , disponivel)
 
 
 
@@ -26,11 +19,11 @@ def menu():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-           
+           print()
         elif opcao == "2":
-            
+            print()
         elif opcao == "3":
-            
+            print()
         elif opcao == "4":
             print("Saindo...")
             break
