@@ -1,4 +1,3 @@
-
 class animal:
     def __init__(self, nome, peso, idade):
         self.nome = nome
