@@ -9,7 +9,7 @@ def criarlembrete(mensagem, segundos):
     notification.notify(
         title = "LEMBRETE",
         message = "HENRIQUE VIADO",
-        timeout = 5
+        timeout = 100
     )
 
 criarlembrete("Teste123", 2)
