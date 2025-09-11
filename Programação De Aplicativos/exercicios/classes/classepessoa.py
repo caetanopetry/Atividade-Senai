@@ -55,5 +55,4 @@ def menu():
         else:
             print("Opção inválida!")
 
-
 menu()
