@@ -29,7 +29,6 @@ aluno1.adicionarnota()
 aluno1.adicionarnota()
 aluno1.mostrarinfo()
 
-
 nome = input ("Qual o nome do aluno?: ")
 curso = input ("Qual o nome do curso?: ")
 aluno2 = aluno(nome, curso)
