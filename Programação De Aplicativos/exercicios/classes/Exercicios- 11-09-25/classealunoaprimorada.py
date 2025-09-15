@@ -38,5 +38,3 @@ aluno2.adicionarnota()
 aluno2.adicionarnota()
 
 aluno2.mostrarinfo()
-
-
