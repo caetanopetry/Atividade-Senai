@@ -29,4 +29,3 @@ conta_bancaria_1.mostrar_saldo()
 
 print(f"\nTítular: {conta_bancaria_2.titular}")
 conta_bancaria_2.mostrar_saldo()
-
