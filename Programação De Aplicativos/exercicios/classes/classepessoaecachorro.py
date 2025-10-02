@@ -15,7 +15,7 @@ class dog:
     def __init__ (self, nome, idade, peso, raça):
         self.nome = nome
         self.idade = idade
-        self.peso = peso
+        self.peso = peso                                                               
         self.raça = raça
         
     def latir(self):
