@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Salas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Salas</h1>
+        {% for sala in salas %}
+        <div class="card">
+            <h2>{{sala.nome}}</h2>
+            <h3 class="capacidade">Capacidade: {{ sala.capacidade}}</h3>
+            <h3 class="localizacao">Localização: {{ sala.localizacao}}</h3>
+        </div>
+        {% endfor %}
+
+        <a class="botao" href="/">Página Inicial</a>
+        <a class="botao" href="/filmes.html">Ver Filmes</a>
+    </div>
+</body>
+</html>

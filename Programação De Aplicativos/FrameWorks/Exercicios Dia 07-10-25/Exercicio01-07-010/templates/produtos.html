@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        table {
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        /* Adicionei uma regra CSS para destacar o Estoque Baixo */
+        .Estoque-Baixo { 
+            background-color: #ffcccc !important; /* Exemplo de destaque em vermelho claro */
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 300px;
+            border: none;
+            background: #4caf50;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        button:hover {
+            background: #45a049; /* Ajustei a cor do hover para uma tonalidade mais escura */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+        </tr>
+        
+        {% set produtos_baixos = [] %}
+        {% for produto in produtos %}
+        {% if produto.estoque < 50 %}
+        {% set _ = produtos_baixos.append(produto) %}
+        <tr class="Estoque-Baixo">
+        {% else %}
+        <tr>
+        {% endif %}
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.preco }}</td>
+            <td>{{ produto.estoque }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% if produtos_baixos %}
+    <h2 style="text-align: center; color: #d32c2c; margin-top: 30px;">Produtos com Estoque Baixo:</h2>
+    <ul style="list-style-type: none; padding: 0; text-align: center;">
+        {% for produto in produtos_baixos %}
+        <li style="margin: 5px 0; color: #d32c2c;">{{ produto.nome }} - Estoque: {{ produto.estoque }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <a href="/"><button>Ver Inicio</button></a>
+</body>
+
+</html>

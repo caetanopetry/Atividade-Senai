@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de produtos</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .preco{
+            color: green;
+            font-weight: bold;
+        }
+        
+        .categoria{
+            color: #666;
+            font-size: 14px;
+        }
+
+        .botao {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+        .botao:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1>Lista de Produtos</h1>
+        {% for produto in produtos %}
+        <div class = "card">
+            <h3>{{produto.nome}}</h3>
+            <p class = "categoria"> Categoria: {{ produto.categoria}}</p>
+            <p class = "preco"> Preço: {{ produto.preco}}</p>
+            <a href="/comprar" class="botao">Comprar</a>
+
+        </div>
+        {% endfor %}
+        <p class = "voltar"><a href="/">Voltar</a></p>
+    </div>
+</body>
+</html>
