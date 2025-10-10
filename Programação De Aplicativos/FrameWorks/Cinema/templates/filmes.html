@@ -12,7 +12,10 @@
         <div class="card">
             <h2>{{filme.titulo}}</h2>
             <h3 class="genero">Gênero: {{ filme.genero}}</h3>
-            <h3 class="avaliacao">Avaliação: {{ filme.avaliacao}}</h3>
+            <h3 class="avaliacao">Avaliação
+            <span class="{% if filme.avaliacao >= 7 %}avaliacao-alta {% else %}avaliacao-baixa{% endif %}"></span>
+            Avaliação: {{ filme.avaliacao}}
+            </h3>
         </div>
         {% endfor %}
 

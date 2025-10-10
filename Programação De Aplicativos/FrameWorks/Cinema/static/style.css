@@ -1,8 +1,7 @@
-/* Tema consistente para o site do Cinema */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
+    background-color: #1a1a1a; 
+    color: #ffffff; 
     margin: 0;
     padding: 0;
 }
@@ -11,19 +10,19 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #2a2a2a; /* Fundo dos containers */
+    background-color: #2a2a2a; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 h1 {
     text-align: center;
-    color: #ff0000; /* Vermelho para títulos */
+    color: #ff0000; 
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #ffcc00; /* Amarelo para subtítulos */
+    color: #ffcc00; 
 }
 
 .card {
@@ -49,7 +48,7 @@ p {
 
 .botao, button {
     display: inline-block;
-    background-color: #ff0000; /* Vermelho */
+    background-color: #ff0000; 
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -61,11 +60,11 @@ p {
 }
 
 .botao:hover, button:hover {
-    background-color: #cc0000; /* Vermelho escuro no hover */
+    background-color: #cc0000; 
 }
 
 a {
-    color: #ffcc00; /* Amarelo para links */
+    color: #ffcc00; 
     text-decoration: none;
 }
 
@@ -73,7 +72,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Centralização e estilo da página inicial */
+
 .centralizado {
     text-align: center;
     padding: 60px 20px;
@@ -81,7 +80,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* ocupa a tela inteira */
+    min-height: 100vh; 
 }
 
 .descricao {
@@ -104,4 +103,15 @@ a:hover {
 
 .botao:hover {
     transform: scale(1.08);
+}
+
+
+.avaliacao-alta {
+    color: #00ff00; 
+}
+.avaliacao-media {
+    color: #ffff00; 
+}
+.avaliacao-baixa {
+    color: #ff0000; 
 }
