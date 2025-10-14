@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Treinos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Treinos</h1>
+        {% for treino in treinos %}
+        <div class="card">
+            <h2>{{treino.nome}}</h2>
+            <h3 class="genero">Duração: {{ treino.duracao}}</h3>
+            {% if treino.nivel == "Difícil" %}
+            <h3 class="nivel">Nível: {{ treino.nivel }} 💪</h3>
+            {% else %}
+            <h3 class="nivel">Nível: {{ treino.nivel }}</h3>
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        <a class="botao" href="/">Página Inicial</a>
+        <a class="botao" href="/alunos.html">Ver Alunos</a>
+    </div>
+</body>
+</html>

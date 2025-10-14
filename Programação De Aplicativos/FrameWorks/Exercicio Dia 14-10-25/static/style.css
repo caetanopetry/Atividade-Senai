@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #2a2a2a; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00; 
+    margin: 10px 0 20px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00; 
+    margin: 10px 0 30px 0;
+}
+
+.card {
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.genero, .avaliacao, .nome, .capacidade, .localizacao {
+    color: #cccccc;
+}
+
+.botao, button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000000; 
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.botao:hover, button:hover {
+    background-color: #e6b800; 
+    transform: scale(1.08);
+}
+
+a {
+    color: #ffcc00; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.centralizado {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh; 
+}
+
+.descricao {
+    font-size: 18px;
+    color: #dddddd;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    margin-bottom: 20px;
+    background: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 100%;
+    max-width: 600px;
+}
