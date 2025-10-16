@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Sala</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nova_sala.css') }}">
+</head>
+<form method="POST" action="/salvar_sala">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="capacidade">Capacidade:</label>
+    <input type="number" id="capacidade" name="capacidade" required>
+
+    <label for="localizacao">Localização:</label>
+    <select id="localizacao" name="localizacao" required>
+        <option value="Térreo">Térreo</option>
+        <option value="1º Andar">1º Andar</option>
+        <option value="2º Andar">2º Andar</option>
+    </select>
+
+    
+    <button type="submit">Salvar</button>
+</form>
+
+<a href="/">⬅ Voltar</a>
+
+</body>
+

@@ -42,7 +42,7 @@ p {
     margin: 5px 0;
 }
 
-.genero, .avaliacao, .nome, .capacidade, .localizacao {
+.genero, .avaliacao, .nome, .ano, .capacidade, .localizacao {
     color: #cccccc;
 }
 

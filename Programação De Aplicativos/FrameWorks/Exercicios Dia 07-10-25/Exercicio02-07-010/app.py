@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    # Página inicial do site
     return render_template("index.html", titulo="Catálogo de Filmes Flask")
 
 @app.route("/filmes")
