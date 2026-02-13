@@ -57,4 +57,3 @@ dados_produto = {
 print("Exivindo o nome do cliente e do produto:")
 print(f"Cliente: {dados_cliente['nome']}")
 print(f"Produto: {dados_produto[descricao]}")
-print   

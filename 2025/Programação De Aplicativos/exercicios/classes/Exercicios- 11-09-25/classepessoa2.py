@@ -10,8 +10,7 @@ class pessoa:
 
     def apresentar(self):
         return f"Oi, eu sou o {self.nome} e tenho {self.idade}"
-    
-    def 
+
     
 caetano = pessoa ("Caetano", 16)
 print(caetano.apresentar())
