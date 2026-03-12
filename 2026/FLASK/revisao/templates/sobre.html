@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+    <style>
+        body {
+            background: #f4f6f9;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #444;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background: #4caf50;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #43a047;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Sobre Mim</h1>
+
+    <p>
+        Olá, eu sou <strong>Caetano Petry</strong>. Tenho 16 anos e sou estudante de 
+        Desenvolvimento de Sistemas no SENAI Sul, em Joinville-SC.
+    </p>
+
+    <p>
+        Sou apaixonado por tecnologia e estou sempre em busca de aprender 
+        novas habilidades e evoluir tanto no lado técnico quanto pessoal.
+    </p>
+
+    <h2>Tecnologias e Habilidades</h2>
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>MySQL Workbench</li>
+        <li>Git & GitHub</li>
+    </ul>
+
+    <h2>Projeto Favorito</h2>
+    <p>
+        GHCP - Game Chip, desenvolvido com colegas do curso, 
+        aplicando conhecimentos práticos em desenvolvimento.
+    </p>
+
+    <a href="{{ url_for('main') }}">
+        <button>Voltar</button>
+    </a>
+</div>
+
+</body>
+</html>
